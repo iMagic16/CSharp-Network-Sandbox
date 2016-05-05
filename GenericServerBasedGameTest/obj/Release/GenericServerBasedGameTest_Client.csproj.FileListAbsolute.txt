@@ -1,0 +1,7 @@
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Release\GenericServerBasedGameTest_Client.exe.config
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Release\GenericServerBasedGameTest_Client.exe
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Release\GenericServerBasedGameTest_Client.pdb
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Release\GenericServerBasedGameTest_Client.Properties.Resources.resources
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Release\GenericServerBasedGameTest_Client.csproj.GenerateResource.Cache
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Release\GenericServerBasedGameTest_Client.exe
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Release\GenericServerBasedGameTest_Client.pdb

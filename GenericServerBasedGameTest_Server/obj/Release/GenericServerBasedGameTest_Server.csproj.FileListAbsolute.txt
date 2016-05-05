@@ -1,0 +1,5 @@
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest_Server\bin\Release\GenericServerBasedGameTest_Server.exe.config
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest_Server\bin\Release\GenericServerBasedGameTest_Server.exe
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest_Server\bin\Release\GenericServerBasedGameTest_Server.pdb
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest_Server\obj\Release\GenericServerBasedGameTest_Server.exe
+D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest_Server\obj\Release\GenericServerBasedGameTest_Server.pdb
