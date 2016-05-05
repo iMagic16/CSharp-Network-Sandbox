@@ -9,3 +9,13 @@ D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.dll
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.pdb
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.xml
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.exe.config
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.exe
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.pdb
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.exe
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.pdb
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.pdb
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.xml
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csprojResolveAssemblyReference.cache
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Properties.Resources.resources
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csproj.GenerateResource.Cache

@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net;
-using System.Net.Sockets;
-using System.Threading;
 using NetworkCommsDotNet;
 using NetworkCommsDotNet.Connections;
+
+
 namespace GenericServerBasedGameTest_Server
 {
     class Program
@@ -18,7 +14,7 @@ namespace GenericServerBasedGameTest_Server
             //We expect the incoming object to be a string which we state explicitly by using <string>
             NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
             //Start listening for incoming connections
-            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 7700));
+            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 65000));
 
             //Print out the IPs and ports we are now listening on
             Console.WriteLine(">Server listening for TCP connection on:");
@@ -51,16 +47,16 @@ namespace GenericServerBasedGameTest_Server
 
             string MsgToSend = "ACK";
 
-            SendMsg(ClientIP, Convert.ToInt32(ClientPORT), MsgToSend);
+            SendMsg(ClientIP, Convert.ToInt32(ClientPORT), "LoginReq", MsgToSend);
         }
 
 
-        static void SendMsg(string IP, int PORT, string MSG)
+        static void SendMsg(string IP, int PORT, string MSGTYPE, string MSG)
         {
             try
             {
                 Console.WriteLine(">Sending MSG '" + MSG + "'");
-                NetworkComms.SendObject("Message", IP, PORT, MSG);
+                NetworkComms.SendObject(MSGTYPE, IP, PORT, MSG);
                 Console.WriteLine(">Sent!");
             }
             catch (Exception e)

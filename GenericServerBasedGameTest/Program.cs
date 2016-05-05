@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using NetworkCommsDotNet;
 using NetworkCommsDotNet.Connections;
-using System.Threading;
 
 namespace GenericServerBasedGameTest_Client
 {
@@ -21,7 +16,7 @@ namespace GenericServerBasedGameTest_Client
         {
 
             Console.WriteLine(">Starting Client");
-            serverInfo = "192.168.0.10:7700"; //server IP:Port
+            serverInfo = "192.168.0.10:65000"; //server IP:Port
             Console.WriteLine(">>serverInfo = {0}", serverInfo);
             Console.WriteLine(">>Splitting into seperate vars");
             GetServerIPAndPort(serverInfo);
@@ -33,6 +28,7 @@ namespace GenericServerBasedGameTest_Client
             // ShutdownConnection();
 
             Console.ReadLine();
+            ShutdownConnection();
         }
 
 
@@ -47,7 +43,11 @@ namespace GenericServerBasedGameTest_Client
                     Console.WriteLine(MessageType);
                     break;
 
-                case "Message":
+                case "CharReq":
+                    Console.WriteLine(MessageType);
+                    break;
+
+                case "Default":
                     Console.WriteLine(MessageType);
                     break;
 
@@ -63,6 +63,8 @@ namespace GenericServerBasedGameTest_Client
 
 
         }
+
+
 
         static void SendMsg(string IP, int PORT, string MSGTYPE, string MSG)
         {
