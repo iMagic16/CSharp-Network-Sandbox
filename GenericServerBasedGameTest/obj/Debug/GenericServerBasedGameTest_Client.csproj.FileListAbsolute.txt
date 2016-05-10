@@ -6,7 +6,6 @@ D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csproj.GenerateResource.Cache
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.exe
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.pdb
-D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.dll
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.pdb
 D:\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.xml
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.exe.config

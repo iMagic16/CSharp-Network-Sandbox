@@ -1,0 +1,21 @@
+Default:
+	Default:Ping,{Timestamp} 
+		Default:Pong,{Timestamp}
+
+LoginReq:
+	LoginReq:RequestSessionID (MSG = MsgType + "RequestSessionID")
+		LoginReq:SessionID,{ID}
+
+	LoginReq:Username,{Username},Passwd,{Passwd},SessionID,{SessionID}
+		LoginReq:UserValid <> LoginReq:UserInvalid,{Attempt/MaxAttempt}
+
+	LoginReq:Logout
+		LoginReq:LoggedOut,{Username},SessionClosed{SessionID}
+
+CharReq:
+	CharReq:RequestCharAmount,{ID}
+		CharReq:CharAmount,{AmountOfChars}
+
+	CharReq:UseChar,{CharToUse}
+		CharReq:CharData,{CharData}
+

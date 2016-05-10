@@ -14,7 +14,7 @@ namespace GenericServerBasedGameTest_Server
             //We expect the incoming object to be a string which we state explicitly by using <string>
             NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
             //Start listening for incoming connections
-            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 65000));
+            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 7700));
 
             //Print out the IPs and ports we are now listening on
             Console.WriteLine(">Server listening for TCP connection on:");
@@ -47,16 +47,16 @@ namespace GenericServerBasedGameTest_Server
 
             string MsgToSend = "ACK";
 
-            SendMsg(ClientIP, Convert.ToInt32(ClientPORT), "LoginReq", MsgToSend);
+            SendMsg(ClientIP, Convert.ToInt32(ClientPORT), MsgToSend);
         }
 
 
-        static void SendMsg(string IP, int PORT, string MSGTYPE, string MSG)
+        static void SendMsg(string IP, int PORT, string MSG)
         {
             try
             {
                 Console.WriteLine(">Sending MSG '" + MSG + "'");
-                NetworkComms.SendObject(MSGTYPE, IP, PORT, MSG);
+                NetworkComms.SendObject("Message", IP, PORT, MSG);
                 Console.WriteLine(">Sent!");
             }
             catch (Exception e)

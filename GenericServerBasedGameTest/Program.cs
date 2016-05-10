@@ -9,20 +9,21 @@ namespace GenericServerBasedGameTest_Client
 {
     static class Program
     {
-        static string serverInfo, serverIP, MsgToSend, MsgType;
+        static string serverInfo, serverIP, MsgToSend, MsgType = "";
         static int serverPort;
 
         static void Main()
         {
 
             Console.WriteLine(">Starting Client");
-            serverInfo = "192.168.0.10:65000"; //server IP:Port
+            serverInfo = "192.168.0.10:7700"; //server IP:Port
             Console.WriteLine(">>serverInfo = {0}", serverInfo);
             Console.WriteLine(">>Splitting into seperate vars");
             GetServerIPAndPort(serverInfo);
             SetupListener();
 
-            MsgToSend = "";
+            MsgToSend = "APPROVEME";
+            MsgType = "Message";
             SendMsg(serverIP, serverPort, MsgType, MsgToSend);
 
             // ShutdownConnection();
@@ -40,15 +41,15 @@ namespace GenericServerBasedGameTest_Client
             switch (MessageType)
             {
                 case "LoginReq":
-                    Console.WriteLine(MessageType);
+                    Console.WriteLine(MessageType + " Received. (" + Message + ")");
                     break;
 
                 case "CharReq":
-                    Console.WriteLine(MessageType);
+                    Console.WriteLine(MessageType + " Received. (" + Message + ")");
                     break;
 
-                case "Default":
-                    Console.WriteLine(MessageType);
+                case "Message": //default
+                    Console.WriteLine(MessageType + " Received. (" + Message + ")");
                     break;
 
                 default:
@@ -59,7 +60,7 @@ namespace GenericServerBasedGameTest_Client
 
 
 
-            Console.ReadLine();
+     //       Console.ReadLine();
 
 
         }
@@ -77,6 +78,7 @@ namespace GenericServerBasedGameTest_Client
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                //throw;
 
             }
 
