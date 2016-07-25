@@ -38,7 +38,8 @@ namespace GenericServerBasedGameTest_Server
         private static void PrintIncomingMessage(PacketHeader header, Connection connection, string message)
         {
             Console.WriteLine(">>>>(Server) A message was received from " + connection.ToString() + " which said '" + message + "'.");
-
+            Console.WriteLine(connection.ConnectionInfo.NetworkIdentifier);
+        //    connection.ConnectionInfo.NetworkIdentifier
         //    Console.WriteLine(connection.ConnectionInfo.RemoteEndPoint);
 
             string ClientIP = Convert.ToString(((System.Net.IPEndPoint)connection.ConnectionInfo.RemoteEndPoint).Address);

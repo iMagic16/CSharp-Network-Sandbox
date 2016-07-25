@@ -16,14 +16,14 @@ namespace GenericServerBasedGameTest_Client
         {
 
             Console.WriteLine(">Starting Client");
-            serverInfo = "192.168.0.10:7700"; //server IP:Port
+            serverInfo = "127.0.0.1:7700"; //server IP:Port
             Console.WriteLine(">>serverInfo = {0}", serverInfo);
             Console.WriteLine(">>Splitting into seperate vars");
             GetServerIPAndPort(serverInfo);
             SetupListener();
 
-            MsgToSend = "APPROVEME";
-            MsgType = "Message";
+            MsgToSend = "ConnectMe";
+            MsgType = "Connect";
             SendMsg(serverIP, serverPort, MsgType, MsgToSend);
 
             // ShutdownConnection();
@@ -60,7 +60,7 @@ namespace GenericServerBasedGameTest_Client
 
 
 
-     //       Console.ReadLine();
+            //       Console.ReadLine();
 
 
         }
@@ -72,7 +72,7 @@ namespace GenericServerBasedGameTest_Client
             try
             {
                 Console.WriteLine(">Sending MSG '" + MSG + "'");
-                NetworkComms.SendObject(MSGTYPE, IP, PORT, MSG);
+                NetworkComms.SendObject("Message", IP, PORT, MSGTYPE + ":" + MSG);
                 Console.WriteLine(">Sent!");
             }
             catch (Exception e)

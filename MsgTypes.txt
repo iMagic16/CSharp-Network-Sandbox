@@ -1,3 +1,7 @@
+MessageType
+	Send
+		Reply
+
 Default:
 	Default:Ping,{Timestamp} 
 		Default:Pong,{Timestamp}
