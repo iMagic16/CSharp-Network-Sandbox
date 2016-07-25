@@ -2,19 +2,24 @@
 using System.Net;
 using NetworkCommsDotNet;
 using NetworkCommsDotNet.Connections;
-
+using System.Windows.Forms;
 
 namespace GenericServerBasedGameTest_Server
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Server());
+
             //Trigger the method PrintIncomingMessage when a packet of type 'Message' is received
             //We expect the incoming object to be a string which we state explicitly by using <string>
             NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
             //Start listening for incoming connections
-            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 27015));
+           // Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 27015));
 
             //Print out the IPs and ports we are now listening on
             Console.WriteLine(">Server listening for TCP connection on:");
@@ -39,25 +44,26 @@ namespace GenericServerBasedGameTest_Server
         {
             Console.WriteLine(">>>>(Server) A message was received from " + connection.ToString() + " which said '" + message + "'.");
             Console.WriteLine(connection.ConnectionInfo.NetworkIdentifier);
-        //    connection.ConnectionInfo.NetworkIdentifier
-        //    Console.WriteLine(connection.ConnectionInfo.RemoteEndPoint);
-        
+            //    connection.ConnectionInfo.NetworkIdentifier
+            //    Console.WriteLine(connection.ConnectionInfo.RemoteEndPoint);
+
             string ClientIP = Convert.ToString(((System.Net.IPEndPoint)connection.ConnectionInfo.RemoteEndPoint).Address);
 
             string ClientPORT = Convert.ToString(((System.Net.IPEndPoint)connection.ConnectionInfo.RemoteEndPoint).Port);
 
             string MsgToSend = "ACK";
+            string MsgType = "ID";
 
-            SendMsg(ClientIP, Convert.ToInt32(ClientPORT), MsgToSend);
+            SendMsg(ClientIP, Convert.ToInt32(ClientPORT), MsgType, MsgToSend);
         }
 
 
-        static void SendMsg(string IP, int PORT, string MSG)
+        static void SendMsg(string IP, int PORT, string MSGTYPE, string MSG)
         {
             try
             {
-                Console.WriteLine(">Sending MSG '" + MSG + "'");
-                NetworkComms.SendObject("Message", IP, PORT, MSG);
+                Console.WriteLine(">Sending MSG '" + MSGTYPE + "%" + MSG + "'");
+                NetworkComms.SendObject("Message", IP, PORT, MSGTYPE + "%" + MSG);
                 Console.WriteLine(">Sent!");
             }
             catch (Exception e)
