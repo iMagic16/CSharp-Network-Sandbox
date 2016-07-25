@@ -18,3 +18,4 @@ C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServ
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csprojResolveAssemblyReference.cache
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Properties.Resources.resources
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csproj.GenerateResource.Cache
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Client.resources

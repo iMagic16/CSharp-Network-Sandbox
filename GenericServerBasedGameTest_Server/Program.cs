@@ -14,7 +14,7 @@ namespace GenericServerBasedGameTest_Server
             //We expect the incoming object to be a string which we state explicitly by using <string>
             NetworkComms.AppendGlobalIncomingPacketHandler<string>("Message", PrintIncomingMessage);
             //Start listening for incoming connections
-            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 7700));
+            Connection.StartListening(ConnectionType.TCP, new IPEndPoint(IPAddress.Any, 27015));
 
             //Print out the IPs and ports we are now listening on
             Console.WriteLine(">Server listening for TCP connection on:");
@@ -41,7 +41,7 @@ namespace GenericServerBasedGameTest_Server
             Console.WriteLine(connection.ConnectionInfo.NetworkIdentifier);
         //    connection.ConnectionInfo.NetworkIdentifier
         //    Console.WriteLine(connection.ConnectionInfo.RemoteEndPoint);
-
+        
             string ClientIP = Convert.ToString(((System.Net.IPEndPoint)connection.ConnectionInfo.RemoteEndPoint).Address);
 
             string ClientPORT = Convert.ToString(((System.Net.IPEndPoint)connection.ConnectionInfo.RemoteEndPoint).Port);

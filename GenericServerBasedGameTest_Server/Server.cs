@@ -16,5 +16,24 @@ namespace GenericServerBasedGameTest_Server
         {
             InitializeComponent();
         }
+
+        private void BtnSend_Click(object sender, EventArgs e)
+        {
+            string TxtToSend = TxtCmdToSend.Text;
+            TxtCmdToSend.Clear();
+
+            //Program.
+        }
+
+        private void Server_Load(object sender, EventArgs e)
+        {
+            WriteToOutput("TCP network api test");
+        }
+
+        public void WriteToOutput(string InputText)
+        {
+            string AppendedText = DateTime.Now + InputText;
+            TxtOutput.Text = AppendedText + Environment.NewLine;
+        }
     }
 }
