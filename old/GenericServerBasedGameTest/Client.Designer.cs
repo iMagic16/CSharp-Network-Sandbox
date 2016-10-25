@@ -40,6 +40,7 @@
             this.BtnSend.Size = new System.Drawing.Size(23, 20);
             this.BtnSend.TabIndex = 5;
             this.BtnSend.UseVisualStyleBackColor = true;
+            this.BtnSend.Click += new System.EventHandler(this.BtnSend_Click);
             // 
             // TxtCmdToSend
             // 
@@ -54,7 +55,7 @@
             this.TxtOutput.Multiline = true;
             this.TxtOutput.Name = "TxtOutput";
             this.TxtOutput.ReadOnly = true;
-            this.TxtOutput.Size = new System.Drawing.Size(259, 219);
+            this.TxtOutput.Size = new System.Drawing.Size(259, 173);
             this.TxtOutput.TabIndex = 3;
             // 
             // Client
@@ -67,6 +68,7 @@
             this.Controls.Add(this.TxtOutput);
             this.Name = "Client";
             this.Text = "Client";
+            this.Load += new System.EventHandler(this.Client_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

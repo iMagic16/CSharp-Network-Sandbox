@@ -19,3 +19,14 @@ C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServ
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Properties.Resources.resources
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csproj.GenerateResource.Cache
 C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Client.resources
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.exe.config
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.exe
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\bin\Debug\GenericServerBasedGameTest_Client.pdb
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.pdb
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\bin\Debug\NetworkCommsDotNetComplete.xml
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csprojResolveAssemblyReference.cache
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Client.resources
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.Properties.Resources.resources
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.csproj.GenerateResource.Cache
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.exe
+C:\Users\jamwalsh\Dropbox\Projects\GitHub\GenericServerBasedGameTest\old\GenericServerBasedGameTest\obj\Debug\GenericServerBasedGameTest_Client.pdb
